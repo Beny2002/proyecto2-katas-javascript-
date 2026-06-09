@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Colección de Albums</title>
+  <script src="script.js" defer></script>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #e8d5b7;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    p.subtitle {
+      text-align: center;
+      color: #aaaaaa;
+      margin-bottom: 40px;
+      font-size: 0.95rem;
+    }
+
+    #album-list {
+      list-style: none;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    #album-list li {
+      background-color: #1e1e1e;
+      border-left: 4px solid #e8d5b7;
+      padding: 16px 20px;
+      margin-bottom: 12px;
+      border-radius: 4px;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      transition: background-color 0.2s;
+    }
+
+    #album-list li:hover {
+      background-color: #2a2a2a;
+    }
+
+    #album-list li::before {
+      content: "🎵";
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Metal &amp; Rock Classics</h1>
+  <p class="subtitle">Una selección de álbumes imprescindibles</p>
+  <ul id="album-list"></ul>
+</body>
+</html>
